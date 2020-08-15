@@ -3,6 +3,8 @@ const connectDB = require('./config/db')
 
 const app = express()
 
+app.use(express.urlencoded({ extended: true }))
+
 const authRoute = require('./routes/api/auth')
 const postsRoute = require('./routes/api/posts')
 const profileRoute = require('./routes/api/profile')
