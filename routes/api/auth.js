@@ -1,7 +1,6 @@
 const express = require('express')
 const router = express.Router()
 const isAuthenticated = require('../../middleware/auth')
-const User = require('../../models/User')
 const authController = require('../../controllers/authController')
 
 router.get(
